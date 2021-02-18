@@ -115,7 +115,7 @@
             position: absolute;
             width: 20px;
             height: 20px;
-            background: url(../stu/jd.jpg) no-repeat;
+            background: url(https://cn.bing.com/images/search?view=detailV2&ccid=xH3gZKJV&id=05AFDDF951DAC560390714C593032E365B881B6D&thid=OIP.xH3gZKJVO0-R1F_EcOfMkAHaHa&mediaurl=https%3a%2f%2fwww.quadrantshopping.co.uk%2fwp-content%2fuploads%2f2019%2f01%2fJD_Sports_500.png&exph=500&expw=500&q=JD&simid=608037365438612920&ck=31ECE650C68EF015E65D562034EBD5F4&selectedIndex=0&FORM=IRPRST) no-repeat;
             background-size: 20px 20px;
             left: 10px;
             top: 5px;
@@ -145,7 +145,7 @@
             <li>×</li>
             <!-- 京东图片 -->
             <li>
-                < img src="https://cn.bing.com/images/search?view=detailv2&pname=shenma&FORM=EX0029&q=%E4%BA%AC%E4%B8%9Clogo&id=F25F4C1E5346A372910160F28388AE19AFCC925E&simid=607998341321916767" alt="">
+                < img src="https://cn.bing.com/images/search?view=detailv2&pname=shenma&FORM=EX0029&q=%E4%BA%AC%E4%B8%9Clogo&id=F25F4C1E5346A372910160F28388AE19AFCC925E&simid=607998341321916767" alt=""/>
             </li>
             <li>打开京东APP，购物更轻松</li>
             <li>立即打开</li>
