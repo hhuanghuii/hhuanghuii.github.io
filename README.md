@@ -145,7 +145,7 @@
             <li>×</li>
             <!-- 京东图片 -->
             <li>
-                < img src="D:\index\index.ts\stu\jingdong.jpg" alt="">
+                < img src="https://cn.bing.com/images/search?view=detailv2&pname=shenma&FORM=EX0029&q=%E4%BA%AC%E4%B8%9Clogo&id=F25F4C1E5346A372910160F28388AE19AFCC925E&simid=607998341321916767" alt="">
             </li>
             <li>打开京东APP，购物更轻松</li>
             <li>立即打开</li>
