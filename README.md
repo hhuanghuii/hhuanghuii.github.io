@@ -1,191 +1,139 @@
-
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="D:\stu\Web\my.css">
     <style>
         * {
-            margin: 0;
-            padding: 0;
-        }
-        
-        body {
-            min-width: 320px;
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #ccc;
-        }
-        
-        
-        
-        .app {
-            width: 100%;
-            height: 45px;
-        
-        }
-        
-        .app li {
-            float: left;
-            list-style: none;
-            height: 45px;
-            background-color: #333;
-            text-align: center;
-            color: #fff;
-            line-height: 45px;
-        }
-        
-        
-        .app ul li:nth-child(1) {
-            width: 8%;
-            font-size: 30px;
-        }
-        
-        
-        .app ul li:nth-child(2) {
-            width: 10%;
-        
-        }
-        
-        .app ul li:nth-child(2) img {
-            width: 30px;
-            border-radius: 5px;
-            vertical-align: middle;
-        }
-        
-        .app ul li:nth-child(3) {
-            width: 57%;
-        }
-        
-        .app ul li:nth-child(4) {
-            width: 25%;
-            background-color: #f63515;
-        }
-        
-        .search {
-            position: relative;
-            width: 100%;
-            height: 45px;
-            overflow: hidden;
-        }
-        
-        .search .search-menu {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 45px;
-            height: 44px;
-            background-color: transparent;
-            text-align: center;
-        }
-        
-        #menu-icon {
-            margin-top: 10px;
-        }
-        
-        .search .search-menu img {
-            display: block;
-        
-        }
-        
-        
-        .search .search-login {
-            position: absolute;
-            right: 0;
-            top: 0;
-            width: 45px;
-            height: 44px;
-        
-            color: #fff;
-            text-align: center;
-            line-height: 44px;
-        }
-        
-        .search .search-box {
-            position: relative;
-            height: 30px;
-            margin: 7px 60px 0 60px;
-            background-color: #fff;
-            border-radius: 15px;
-        }
-        
-        .search .search-box .jd {
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background: url(https://cn.bing.com/images/search?view=detailV2&ccid=xH3gZKJV&id=05AFDDF951DAC560390714C593032E365B881B6D&thid=OIP.xH3gZKJVO0-R1F_EcOfMkAHaHa&mediaurl=https%3a%2f%2fwww.quadrantshopping.co.uk%2fwp-content%2fuploads%2f2019%2f01%2fJD_Sports_500.png&exph=500&expw=500&q=JD&simid=608037365438612920&ck=31ECE650C68EF015E65D562034EBD5F4&selectedIndex=0&FORM=IRPRST) no-repeat;
-            background-size: 20px 20px;
-            left: 10px;
-            top: 5px;
-        
-        }
-        .jd::before {
-            content: "";
-            display: block;
-            width: 1px;
-            height: 18px;
-            background-color: #ccc;
-            margin-left: 25px;
-        }
-        #search-icon{
-            position: absolute;
-            top: 5px;
-            left: 40px;
-        }  
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+}
+h2 {
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+.countdown {
+  position: relative;
+  margin: 300px auto;
+  width: 200px;
+  height: 300px;
+  background-color: #2ca9ad;
+  border-radius: 10px;
+}
+.day {
+  position: absolute;
+  margin: 0 auto;
+  width: 40px;
+  height: 30px;
+  background-color: gray;
+  color: white;
+  line-height: 30px;
+}
+.hours {
+  position: absolute;
+  font-size: 20px;
+  text-align: center;
+  left: 52px;
+  bottom: 15px;
+  display: inline-block;
+  width: 30px;
+  height: 35px;
+  background-color: gray;
+  color: white;
+  line-height: 35px;
+}
+.min {
+  position: absolute;
+  font-size: 20px;
+  text-align: center;
+  bottom: 15px;
+  right: 85px;
+  display: inline-block;
+  width: 30px;
+  height: 35px;
+  background-color: gray;
+  color: white;
+  line-height: 35px;
+}
+.sec {
+  position: absolute;
+  font-size: 20px;
+  text-align: center;
+  bottom: 15px;
+  right: 52px;
+  display: inline-block;
+  width: 30px;
+  height: 35px;
+  background-color: gray;
+  color: white;
+  line-height: 35px;
+}
+.icon {
+  position: absolute;
+  top: 155px;
+  right: 76px;
+}
+p {
+  position: absolute;
+  top: 210px;
+  left: 20px;
+  color: #ffffff;
+}
     </style>
 </head>
-
 <body>
-    <!-- 头部 -->
-    <header class="app">
-        <ul>
-            <!-- ×返回字体 -->
-            <li>×</li>
-            <!-- 京东图片 -->
-            <li>
-                < img src="https://cn.bing.com/images/search?view=detailv2&pname=shenma&FORM=EX0029&q=%E4%BA%AC%E4%B8%9Clogo&id=F25F4C1E5346A372910160F28388AE19AFCC925E&simid=607998341321916767" alt=""/>
-            </li>
-            <li>打开京东APP，购物更轻松</li>
-            <li>立即打开</li>
-        </ul>
-    </header>
-    <!-- 整个搜索框盒子 -->
-
-    <div class="search">
-        <!-- 京东菜单图标 -->
-        <div class="search-menu">
-            <svg t="1613053433110" class="icon" id="menu-icon" viewBox="0 0 1024 1024" version="1.1"
-                xmlns="http://www.w3.org/2000/svg" p-id="3222" width="28" height="28">
-                <path
-                    d="M124.56604 259.591293l0 84.975347 764.78119 0 0-84.975347L124.56604 259.591293zM124.56604 557.00603l764.78119 0 0-84.97637L124.56604 472.02966 124.56604 557.00603zM124.56604 769.44542l764.78119 0 0-84.97637L124.56604 684.46905 124.56604 769.44542z"
-                    p-id="3223" fill="#000000"></path>
-            </svg>
-        </div>
-        <!-- 京东搜索框 -->
-        <div class="search-box">
-            <!-- 搜索框里的JD图标 -->
-            <div class="jd"></div>
-            <!-- 搜索图标 -->
-            <svg t="1613101286009" class="icon" id="search-icon" viewBox="0 0 1024 1024" version="1.1"
-                xmlns="http://www.w3.org/2000/svg" p-id="2245" width="18" height="18">
-                <path
-                    d="M480 832A352 352 0 1 1 832 480 352.64 352.64 0 0 1 480 832z m0-640A288 288 0 1 0 768 480 288.64 288.64 0 0 0 480 192z"
-                    fill="#4D4D4D" p-id="2246"></path>
-                <path
-                    d="M896 928a33.28 33.28 0 0 1-22.4-8.96l-192-184.96a32 32 0 0 1 44.16-46.08l192 184.96a32 32 0 0 1-21.76 55.04z"
-                    fill="#4D4D4D" p-id="2247"></path>
-            </svg>
-            <!--  -->
-
-
-        </div>
-        <div class="search-login">
-            登录
-        </div>
+    <div class="countdown"> 
+        <h1>Birthday</h1>
+        <h2>countdown</h2>
+        <svg t="1619570366163" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1349" width="48" height="48"><path d="M784.222 793.944V385.611H667.556V249.5h-58.333v136.111h-68.056V249.5h-58.333v136.111h-68.056V249.5h-58.333v136.111H239.778V793.944H162v58.333h700v-58.333h-77.778z m-58.333 0H298.111v-167.82l7.925 7.925 41.248-41.248 41.248 41.248 41.247-41.248 41.248 41.248 41.247-41.248 41.248 41.248 41.248-41.248 40.698 40.698 41.248-41.248 41.248 41.248 7.923-7.925v168.37z m0-250.864l-7.923 7.923-41.248-41.248-41.248 41.248-40.698-40.698-0.551-0.551-41.248 41.248-40.698-40.698-41.247 41.248-41.248-41.248-41.247 41.248-41.248-41.248-41.248 41.248-7.925-7.925v-99.684H725.89v99.137zM356.444 171.722h58.333v58.333h-58.333zM482.833 171.722h58.333v58.333h-58.333zM609.222 171.722h58.333v58.333h-58.333z" p-id="1350" fill="#ffffff"></path></svg>
+        <p></p>
+        <div class="hours"></div>
+        <div class="min"></div>
+        <div class="sec"></div>
     </div>
-
 </body>
+<script>
+    var daybox = document.querySelector('.day');
+var hoursbox = document.querySelector('.hours');
+var minbox = document.querySelector('.min');
+var secbox = document.querySelector('.sec');
+var textcount = document.querySelector('p');
+var birthday = prompt('输入你的生日');
+function count() {
+    var nowtime = +new Date();
+    var birtime = +new Date(birthday);
+    var overtime = (birtime - nowtime)/1000;
 
-</html>
+    var sec = parseInt(overtime % 60);
+    sec = sec < 10 ? '0' + sec : sec;
+    secbox.innerHTML = sec;
+
+    var min = parseInt(overtime / 60 % 60)
+    min = min < 10 ? '0' +min : min;
+    minbox.innerHTML = min;
+    
+    var hours = parseInt(overtime / 60 / 60 %24);
+    hours = hours < 10 ? '0' + hours :hours;
+    hoursbox .innerHTML = hours;
+
+    var day = parseInt(overtime /60 / 60 / 24);
+    day = day < 10 ? '0' + day : day;
+
+    textcount.innerHTML = '距离你的生日还剩' + day + '天'
+}
+count()
+setInterval(() => {
+    count()
+}, 1000);
+console.log( typeof(birthday));
+</script>
+</html>   
