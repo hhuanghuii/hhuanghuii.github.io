@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -102,11 +102,11 @@ p {
 </body>
 <script>
     var daybox = document.querySelector('.day');
-var hoursbox = document.querySelector('.hours');
-var minbox = document.querySelector('.min');
-var secbox = document.querySelector('.sec');
-var textcount = document.querySelector('p');
-var birthday = prompt('输入你的生日');
+	var hoursbox = document.querySelector('.hours');
+	var minbox = document.querySelector('.min');
+	var secbox = document.querySelector('.sec');
+	var textcount = document.querySelector('p');
+	var birthday = prompt('输入你的生日');
 function count() {
     var nowtime = +new Date();
     var birtime = +new Date(birthday);
