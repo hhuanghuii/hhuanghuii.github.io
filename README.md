@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * {
+* {
   margin: 0;
   padding: 0;
 }
@@ -117,7 +116,7 @@ function count() {
     sec = sec < 10 ? '0' + sec : sec;
     secbox.innerHTML = sec;
 
-    var min = parseInt(overtime / 60 % 60)
+    var min = parseInt(overtime / 60 % 60);
     min = min < 10 ? '0' +min : min;
     minbox.innerHTML = min;
     
@@ -128,12 +127,11 @@ function count() {
     var day = parseInt(overtime /60 / 60 / 24);
     day = day < 10 ? '0' + day : day;
 
-    textcount.innerHTML = '距离你的生日还剩' + day + '天'
+    textcount.innerHTML = '距离你的生日还剩' + day + '天';
 }
-count()
+count();
 setInterval(() => {
-    count()
+    count();
 }, 1000);
-console.log( typeof(birthday));
 </script>
 </html>       
